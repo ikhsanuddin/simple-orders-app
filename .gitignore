@@ -7,3 +7,8 @@ dist
 coverage
 .idea
 .vscode
+backend/node_modules
+backend/dist
+frontend/.next
+frontend/out
+frontend/node_modules
