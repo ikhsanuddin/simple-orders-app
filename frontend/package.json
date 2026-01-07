@@ -1,19 +1,19 @@
 {
-  "name": "frontend",
-  "version": "0.1.0",
+  "name": "simple-order-app-frontend",
+  "version": "1.0.0",
   "author": "Ikhsanuddin Syamsuri <mail.ikhsanuddin@gmail.com> (https://ikhsanuddin.com/)",
   "license": "UNLICENSED",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 3001",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p 3001",
     "lint": "eslint"
   },
   "dependencies": {
     "next": "16.1.1",
-    "react": "19.2.3",
-    "react-dom": "19.2.3"
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
     "@types/node": "^20",
