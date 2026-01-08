@@ -4,7 +4,7 @@ import { ApiProperty } from '@nestjs/swagger';
 export class RegisterAdminDto {
   @ApiProperty({
     description: 'Admin email address',
-    example: 'admin@example.com',
+    example: 'newadmin@example.com',
     type: String,
   })
   @IsEmail()
@@ -12,7 +12,7 @@ export class RegisterAdminDto {
 
   @ApiProperty({
     description: 'Admin password (6-100 characters)',
-    example: 'AdminPassword123',
+    example: 'newadmin123',
     minLength: 6,
     maxLength: 100,
     type: String,
@@ -24,7 +24,7 @@ export class RegisterAdminDto {
 
   @ApiProperty({
     description: 'Admin full name',
-    example: 'Admin User',
+    example: 'New Admin',
     minLength: 2,
     maxLength: 100,
     type: String,

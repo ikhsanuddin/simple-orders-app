@@ -24,7 +24,12 @@ export class AuthController {
   @ApiOperation({
     summary: 'User login',
     description:
-      'Authenticate a user with email and password. Returns an access token and user information.',
+      `Authenticate a user with email and password. Returns an access token and user information.
+
+      Demo credentials: 
+       1. Email: user@example.com, Password: user123
+       2. Email: admin@example.com, Password: admin123
+       3. Email: superadmin@example.com, Password: superadmin123`,
   })
   @ApiBody({ type: LoginDto })
   @ApiResponse({
@@ -54,7 +59,7 @@ export class AuthController {
   @ApiOperation({
     summary: 'User registration',
     description:
-      'Register a new user account with the USER role. The user can then login with the provided credentials.',
+      'Register a new user account with the `USER` role. The user can then login with the provided credentials.',
   })
   @ApiBody({ type: RegisterDto })
   @ApiResponse({
@@ -86,7 +91,7 @@ export class AuthController {
   @ApiOperation({
     summary: 'Register admin user',
     description:
-      'Register a new user with ADMIN role. This endpoint requires SUPER_ADMIN privileges and a valid JWT token.',
+      'Register a new user with `ADMIN` role. This endpoint requires `SUPER_ADMIN` privileges and a valid JWT token.',
   })
   @ApiBody({ type: RegisterAdminDto })
   @ApiResponse({
@@ -96,8 +101,8 @@ export class AuthController {
       example: {
         user: {
           id: '507f1f77bcf86cd799439011',
-          email: 'admin@example.com',
-          name: 'Admin User',
+          email: 'newadmin@example.com',
+          name: 'New Admin User',
           role: 'admin',
         },
       },
