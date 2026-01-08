@@ -116,6 +116,10 @@ frontend/
 3. **Access the application**
    - Frontend: http://localhost:3001
    - Backend API: http://localhost:3000
+   - API Docs: http://localhost:3000/api/docs
+      - UI: `/api/docs` - Interactive Swagger UI interface
+      - JSON: `/api/docs-json` - OpenAPI JSON specification
+      - YAML: `/api/docs-yaml` - OpenAPI YAML specification
 
 ### Demo Credentials
 
